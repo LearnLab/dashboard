@@ -10,7 +10,7 @@ function Header() {
 				<i className="venturit Menu"></i>
 			</button>
 
-			<img className="logo" src="/assets/images/logo/Platform@2x.png" alt="Platform" />
+			<img className="logo" src="./assets/images/logo/Platform@2x.png" alt="Platform" />
 
 			{/* Search Form for header */}
 			<SearchForm/>
@@ -29,7 +29,7 @@ function Header() {
 				<h3 className="name">Clarence Rusell</h3>
 
 				<figure className="figure">
-					<img className="picture" src="/assets/images/placeholders/Picture.png" alt="User" />
+					<img className="picture" src="./assets/images/placeholders/Picture.png" alt="User" />
 				</figure>
 
 				<button type="button" className="more">
