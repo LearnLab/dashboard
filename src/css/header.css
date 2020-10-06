@@ -106,7 +106,7 @@ header div.user button .venturit:before {
 }
 header div.user button.alerts {
   position: relative;
-  background: no-repeat center/20px url("../assets/images/icons/Notification@3x.png");
+  background: no-repeat center/20px url("assets/images/icons/Notification@3x.png");
 }
 header div.user button.alerts:after {
   content: "";
