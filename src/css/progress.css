@@ -218,7 +218,7 @@ section.progress div.confirmation-notification {
   margin: 20px 20px 40px;
   grid-area: notification;
   overflow: auto;
-  background: no-repeat left center/cover url("/assets/images/headers/Oval@2x.png");
+  background: no-repeat left center/cover url("%PUBLIC_URL%/assets/images/headers/Oval@2x.png");
   border-radius: 8px;
 }
 @media screen and (min-width: 960px) {

@@ -62,7 +62,7 @@ section.dashboard {
 		}
 
 		.english::before {
-			background: no-repeat center/cover url('/assets/images/thumbnails/Flag-US-Min.png');
+			background: no-repeat center/cover url('%PUBLIC_URL%/assets/images/thumbnails/Flag-US-Min.png');
 		}
 	}
 
@@ -79,7 +79,7 @@ section.dashboard {
 			margin: 70px auto 0;
 			padding: 20px 0;
 
-			background: no-repeat right/cover url('/assets/images/headers/Header@2x.png'), $blue;
+			background: no-repeat right/cover url('%PUBLIC_URL%/assets/images/headers/Header@2x.png'), $blue;
 		}
 
 		img.dashboard-pet {

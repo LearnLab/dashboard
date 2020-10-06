@@ -92,7 +92,7 @@ class Events extends Component {
 				<div className="carrousel-b" ref={ node => ( this.carouselBNode = node ) }>
 					{eventsToday.map((eventObj, index) => (
 						<div key={ index } className="carrousel-cell">
-							<img className="thumbnail" src={ '/assets/images/thumbnails/' + eventObj.type + '@2x.png' } alt="" />
+							<img className="thumbnail" src={ '%PUBLIC_URL%/assets/images/thumbnails/' + eventObj.type + '@2x.png' } alt="" />
 
 							<h4 className="time">{ eventObj.time }</h4>
 							<h3 className="title">{ eventObj.title }</h3>

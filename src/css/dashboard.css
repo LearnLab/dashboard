@@ -46,7 +46,7 @@ section.dashboard div.current-topic .flag::before {
   width: 18px;
 }
 section.dashboard div.current-topic .english::before {
-  background: no-repeat center/cover url("/assets/images/thumbnails/Flag-US-Min.png");
+  background: no-repeat center/cover url("%PUBLIC_URL%/assets/images/thumbnails/Flag-US-Min.png");
 }
 section.dashboard div.reminder {
   position: relative;
@@ -60,7 +60,7 @@ section.dashboard div.reminder {
   section.dashboard div.reminder {
     margin: 70px auto 0;
     padding: 20px 0;
-    background: no-repeat right/cover url("/assets/images/headers/Header@2x.png"), #3D84FF;
+    background: no-repeat right/cover url("%PUBLIC_URL%/assets/images/headers/Header@2x.png"), #3D84FF;
   }
 }
 section.dashboard div.reminder img.dashboard-pet {

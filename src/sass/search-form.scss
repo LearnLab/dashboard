@@ -27,7 +27,7 @@ form.search_form {
 	input[type='submit'] {
 		width: 40px;
 
-		background: no-repeat center/12px url('/assets/images/icons/Search.png'), $white-smoke;
+		background: no-repeat center/12px url('%PUBLIC_URL%/assets/images/icons/Search.png'), $white-smoke;
 	}
 
 	button.add_btn {

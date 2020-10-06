@@ -16,7 +16,7 @@ form.search_form input[type=text] {
 }
 form.search_form input[type=submit] {
   width: 40px;
-  background: no-repeat center/12px url("/assets/images/icons/Search.png"), #F5F5FB;
+  background: no-repeat center/12px url("%PUBLIC_URL%/assets/images/icons/Search.png"), #F5F5FB;
 }
 form.search_form button.add_btn {
   display: none;

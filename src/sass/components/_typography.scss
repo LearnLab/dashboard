@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: 'Gilroy';
-	src: url('../../assets/fonts/Gilroy/Gilroy-Light.otf') format('OpenType');
+	src: url('%PUBLIC_URL%/assets/fonts/Gilroy/Gilroy-Light.otf') format('OpenType');
 
 	font-style: normal;
 	font-weight: 300;
@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'Gilroy';
-	src: url('../../assets/fonts/Gilroy/Gilroy-ExtraBold.otf') format('OpenType');
+	src: url('%PUBLIC_URL%/assets/fonts/Gilroy/Gilroy-ExtraBold.otf') format('OpenType');
 
 	font-style: normal;
 	font-weight: 900;
@@ -27,11 +27,11 @@
 
 @font-face {
   font-family: 'venturit';
-  src:  url('../../assets/fonts/venturit/venturit.eot?vxyq6n');
-  src:  url('../../assets/fonts/venturit/venturit.eot?vxyq6n#iefix') format('embedded-opentype'),
-    url('../../assets/fonts/venturit/venturit.ttf?vxyq6n') format('truetype'),
-    url('../../assets/fonts/venturit/venturit.woff?vxyq6n') format('woff'),
-    url('../../assets/fonts/venturit/venturit.svg?vxyq6n#venturit') format('svg');
+  src:  url('%PUBLIC_URL%/assets/fonts/venturit/venturit.eot?vxyq6n');
+  src:  url('%PUBLIC_URL%/assets/fonts/venturit/venturit.eot?vxyq6n#iefix') format('embedded-opentype'),
+    url('%PUBLIC_URL%/assets/fonts/venturit/venturit.ttf?vxyq6n') format('truetype'),
+    url('%PUBLIC_URL%/assets/fonts/venturit/venturit.woff?vxyq6n') format('woff'),
+    url('%PUBLIC_URL%/assets/fonts/venturit/venturit.svg?vxyq6n#venturit') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

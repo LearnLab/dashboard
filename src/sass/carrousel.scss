@@ -54,7 +54,7 @@ div.carrousel {
 		height: 100%;
 		width: 100%;
 
-		background: no-repeat center/cover url('/assets/images/headers/Clock.png');
+		background: no-repeat center/cover url('%PUBLIC_URL%/assets/images/headers/Clock.png');
 		border-radius: 10px;
 
 		.topic {
