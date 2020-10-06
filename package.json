@@ -1,6 +1,6 @@
 {
   "homepage": "http://learnlab.github.io/dashboard",
-  "name": "public_html",
+  "name": "dashboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
