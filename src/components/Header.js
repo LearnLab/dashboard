@@ -16,7 +16,7 @@ function Header() {
 			<SearchForm/>
 
 			<div className="user">
-				<button type="button" className="alerts" style={{ background: 'assets/images/icons/Notification@3x.png' }}>
+				<button type="button" className="alerts" style={{ backgroundImage: "url('assets/images/icons/Notification@3x.png')" }}>
 					<i className="venturit Alerts"></i>
 
 					<Alerts/>

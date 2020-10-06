@@ -136,7 +136,10 @@ header {
 		button.alerts {
 			position: relative;
 
-			background: no-repeat center/20px url('assets/images/icons/Notification@3x.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 20px;
+			//background-image: url('assets/images/icons/Notification@3x.png');
 
 			&:after {
 				content: '';
