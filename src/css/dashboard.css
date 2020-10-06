@@ -1,0 +1,106 @@
+section.dashboard {
+  position: relative;
+  overflow: visible;
+  padding: 1px 0;
+}
+@media screen and (min-width: 960px) {
+  section.dashboard {
+    margin: 90px auto 30px;
+    width: 84vw;
+  }
+}
+section.dashboard h1, section.dashboard h2, section.dashboard h3, section.dashboard h4, section.dashboard h5, section.dashboard h6 {
+  margin: 10px auto;
+}
+section.dashboard div.current-topic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: -2px 2px 14px 8px #C1C1C166;
+}
+@media screen and (min-width: 360px) {
+  section.dashboard div.current-topic {
+    padding: 24px;
+  }
+}
+section.dashboard div.current-topic h1, section.dashboard div.current-topic h2, section.dashboard div.current-topic h3, section.dashboard div.current-topic h4, section.dashboard div.current-topic h5, section.dashboard div.current-topic h6 {
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  color: #C1C1C1;
+}
+section.dashboard div.current-topic .flag {
+  position: relative;
+  margin-left: 20px;
+  font-size: 22px;
+  color: #103460;
+}
+section.dashboard div.current-topic .flag::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  height: 18px;
+  width: 18px;
+}
+section.dashboard div.current-topic .english::before {
+  background: no-repeat center/cover url("/assets/images/thumbnails/Flag-US-Min.png");
+}
+section.dashboard div.reminder {
+  position: relative;
+  margin: 100px auto 0;
+  padding: 140px 0 20px;
+  color: #FFF;
+  background: #3D84FF;
+  border-radius: 16px;
+}
+@media screen and (min-width: 960px) {
+  section.dashboard div.reminder {
+    margin: 70px auto 0;
+    padding: 20px 0;
+    background: no-repeat right/cover url("/assets/images/headers/Header@2x.png"), #3D84FF;
+  }
+}
+section.dashboard div.reminder img.dashboard-pet {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 960px) {
+  section.dashboard div.reminder img.dashboard-pet {
+    top: auto;
+    left: 12px;
+    bottom: 0;
+    transform: translateY(0);
+  }
+}
+section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6, section.dashboard div.reminder p {
+  margin: 14px auto;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6, section.dashboard div.reminder p {
+    text-align: left;
+  }
+}
+section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6 {
+  max-width: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+@media screen and (min-width: 960px) {
+  section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6 {
+    margin: 20px 20px 14px 250px;
+    max-width: initial;
+  }
+}
+@media screen and (min-width: 960px) {
+  section.dashboard div.reminder p {
+    margin: 14px 20px 20px 250px;
+  }
+}
+
+/*# sourceMappingURL=dashboard.css.map */

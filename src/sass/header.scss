@@ -1,0 +1,198 @@
+// Header component
+
+// Needed for variable translation
+@import 'libs/vars';
+
+$elements-height: 42px;
+$user: 47px;
+$side-margin: 20px;
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: $white;
+	box-shadow: 0 0 14px 6px #C1C1C170;
+
+	button.menu_btn {
+		position: absolute;
+		top: 50%;
+		left: 14px;
+
+		transform: translateY(-50%);
+
+		background: none;
+		border: none;
+
+		i.venturit:before {
+			font-size: 24px;
+
+			color: $gray;
+		}
+
+		@media screen and (min-width: 960px) {
+			display: none;
+		}
+	}
+
+	img.logo {
+		display: block;
+		height: $elements-height;
+		margin: 12px auto;
+
+		@media screen and (min-width: 960px) {
+			margin: 0;
+
+			position: absolute;
+			top: 50%;
+			left: 12px;
+
+			transform: translateY(-50%);
+		}
+	}
+
+	form.search_form {
+		display: none;
+
+		@media screen and (min-width: 960px) {
+			display: flex;
+			margin: 12px auto;
+		}
+
+		input[type="text"] {
+			@media screen and (min-width: 960px) {
+				padding: 12px;
+
+				width: 35vw;
+			}
+		}
+
+		button.add_btn {
+			display: initial;
+
+			margin-left: 20px;
+			padding: 0 10px;
+
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			color: $white;
+			background: $blue;
+			border-radius: 10px;
+			border: none;
+		}
+	}
+
+	div.user {
+		position: absolute;
+		right: $side-margin;
+		top: 50%;
+
+		transform: translateY(-50%);
+
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+
+		@media screen and (min-width: 960px) {
+			right: 0;
+		}
+
+		button.alerts, button.chats, button.more, .name {
+			display: none;
+
+			@media screen and (min-width: 960px) {
+				display: initial;
+			}
+		}
+
+		button, .name, .figure {
+			margin: 0 8px;
+		}
+
+		button {
+			height: 26px;
+			width: 32px;
+
+			background: none;
+			border: none;
+
+			.venturit:before {
+				color: $dark-gray;
+
+				font-size: 22px;
+			}
+		}
+
+		button.alerts {
+			position: relative;
+
+			background: no-repeat center/20px url('/assets/images/icons/Notification@3x.png');
+
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0;
+				bottom: 0;
+
+				height: 14px;
+				width: 14px;
+
+				background: $blue;
+				border-radius: 50%;
+			}
+
+			div.alerts-pop {
+				position: absolute;
+				top: 56px;
+				left: -280px;
+
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+
+		button.more {
+			.venturit:before {
+				font-size: 14px;
+			}
+		}
+
+		.name {
+			color: $dark-gray;
+		}
+
+		figure.figure {
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			img.picture {
+				display: block;
+				height: $user;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+
+				height: 14px;
+				width: 14px;
+
+				background: $blue;
+				border-radius: 50%;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// Base style for the Dashboard
+
+html {
+	margin: 0;
+}
+
+body {
+	@extend html;
+
+	background: $white-smoke;
+}
+
+section {
+	margin: 30px 20px;
+}
