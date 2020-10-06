@@ -136,7 +136,7 @@ header {
 		button.alerts {
 			position: relative;
 
-			background: no-repeat center/20px url('%PUBLIC_URL%/assets/images/icons/Notification@3x.png');
+			background: no-repeat center/20px url('../assets/images/icons/Notification@3x.png');
 
 			&:after {
 				content: '';
