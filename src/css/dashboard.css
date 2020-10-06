@@ -40,8 +40,8 @@ section.dashboard div.current-topic .language {
 section.dashboard div.current-topic .language .flag {
   position: absolute;
   top: 0;
-  left: -16px;
-  height: 12px;
+  left: -23px;
+  width: 20px;
 }
 section.dashboard div.reminder {
   position: relative;
@@ -55,6 +55,7 @@ section.dashboard div.reminder {
   section.dashboard div.reminder {
     margin: 70px auto 0;
     padding: 20px 0;
+    background: no-repeat right/cover url(../images/headers/Header@2x.png), #3D84FF;
   }
 }
 section.dashboard div.reminder img.dashboard-pet {

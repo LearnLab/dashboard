@@ -87,8 +87,7 @@ div.carrousel {
 			}
 
 			&.date {
-				margin-top: 8px;
-
+				margin-top: 2px;
 				font-weight: 400;
 			}
 
@@ -107,6 +106,8 @@ div.carrousel {
 
 				&.date {
 					right: 80px;
+
+					font-weight: 600;
 				}
 			}
 		}

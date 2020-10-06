@@ -88,6 +88,13 @@ header {
 			background: $blue;
 			border-radius: 10px;
 			border: none;
+
+			transition: 300ms;
+
+			&:hover {
+				color: $blue;
+				background: $white;
+			}
 		}
 	}
 
@@ -111,12 +118,12 @@ header {
 			display: none;
 
 			@media screen and (min-width: 960px) {
-				display: initial;
+				display: block;
 			}
 		}
 
-		button, .name, .figure {
-			margin: 0 8px;
+		button.alerts, button.chats {
+			margin: 0 10px 0 0;
 		}
 
 		button {
@@ -136,9 +143,7 @@ header {
 		button.alerts {
 			position: relative;
 
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 20px;
+			background: no-repeat center/20px url(../images/icons/Notification@3x.png);
 
 			&:after {
 				content: '';
@@ -160,23 +165,38 @@ header {
 
 				opacity: 0;
 				pointer-events: none;
+				transform: translateY(20px);
+
+				transition: 300ms;
+
+				&.opened {
+					opacity: 1;
+					pointer-events: auto;
+					transform: translateY(0);
+				}
 			}
 		}
 
 		button.more {
 			.venturit:before {
 				font-size: 14px;
+
+				color: $gray;
 			}
 		}
 
 		.name {
-			color: $dark-gray;
+			margin: 0 14px 0 0;
+
+			font-weight: 400;
+
+			color: $dark-blue;
 		}
 
 		figure.figure {
 			position: relative;
-			margin: 0;
 			padding: 0;
+			margin: 0;
 
 			img.picture {
 				display: block;

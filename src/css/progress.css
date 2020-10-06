@@ -156,6 +156,11 @@ section.progress div.counter-elements {
     margin: 20px;
   }
 }
+@media screen and (min-width: 960px) {
+  section.progress div.counter-elements {
+    margin: 0;
+  }
+}
 section.progress div.counter-elements div {
   position: relative;
   margin: 0;
@@ -218,7 +223,7 @@ section.progress div.confirmation-notification {
   margin: 20px 20px 40px;
   grid-area: notification;
   overflow: auto;
-  background: no-repeat left center/cover url("%PUBLIC_URL%/assets/images/headers/Oval@2x.png");
+  background: no-repeat left center/cover url(../images/headers/Oval@2x.png);
   border-radius: 8px;
 }
 @media screen and (min-width: 960px) {

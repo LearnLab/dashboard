@@ -13,8 +13,12 @@ form.search_form {
 
 		border: none;
 
-		color: $light-gray;
+		color: $dark-blue;
 		background: $white-smoke;
+
+		&:focus {
+			outline: 1px solid $blue;
+		}
 	}
 
 	input[type='text'] {
@@ -27,7 +31,7 @@ form.search_form {
 	input[type='submit'] {
 		width: 40px;
 
-		background: no-repeat center/12px url('%PUBLIC_URL%/assets/images/icons/Search.png'), $white-smoke;
+		background: no-repeat center/12px url(../images/icons/Search.png), $white-smoke;
 	}
 
 	button.add_btn {

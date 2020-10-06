@@ -67,6 +67,11 @@ header form.search_form button.add_btn {
   background: #3D84FF;
   border-radius: 10px;
   border: none;
+  transition: 300ms;
+}
+header form.search_form button.add_btn:hover {
+  color: #3D84FF;
+  background: #FFF;
 }
 header div.user {
   position: absolute;
@@ -88,11 +93,11 @@ header div.user button.alerts, header div.user button.chats, header div.user but
 }
 @media screen and (min-width: 960px) {
   header div.user button.alerts, header div.user button.chats, header div.user button.more, header div.user .name {
-    display: initial;
+    display: block;
   }
 }
-header div.user button, header div.user .name, header div.user .figure {
-  margin: 0 8px;
+header div.user button.alerts, header div.user button.chats {
+  margin: 0 10px 0 0;
 }
 header div.user button {
   height: 26px;
@@ -106,9 +111,7 @@ header div.user button .venturit:before {
 }
 header div.user button.alerts {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
+  background: no-repeat center/20px url(../images/icons/Notification@3x.png);
 }
 header div.user button.alerts:after {
   content: "";
@@ -126,17 +129,27 @@ header div.user button.alerts div.alerts-pop {
   left: -280px;
   opacity: 0;
   pointer-events: none;
+  transform: translateY(20px);
+  transition: 300ms;
+}
+header div.user button.alerts div.alerts-pop.opened {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 header div.user button.more .venturit:before {
   font-size: 14px;
+  color: #C1C1C1;
 }
 header div.user .name {
-  color: #9D9BB6;
+  margin: 0 14px 0 0;
+  font-weight: 400;
+  color: #103460;
 }
 header div.user figure.figure {
   position: relative;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 header div.user figure.figure img.picture {
   display: block;

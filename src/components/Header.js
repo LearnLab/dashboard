@@ -1,43 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SearchForm from './SearchForm';
 import Alerts from './Alerts';
+
 import '../css/header.css';
 
-function Header() {
-	return (
-		<header>
-			<button type="button" className="menu_btn">
-				<i className="venturit Menu"></i>
-			</button>
+// Image
+import Logo from '../images/logo/Platform@2x.png';
+import User from '../images/placeholders/Picture.png';
 
-			<img className="logo" src={require('../images/logo/Platform@2x.png')} alt="Platform" />
+class Header extends Component {
+	constructor() {
+		super();
 
-			{/* Search Form for header */}
-			<SearchForm/>
+		this.showPopUp = this.showPopUp.bind(this);
+		this.state = {
+			opened: false
+		};
+	}
 
-			<div className="user">
-				<button type="button" className="alerts" style={{ backgroundImage: "url('./assets/images/icons/Notification@3x.png')" }}>
-					<i className="venturit Alerts"></i>
+	showPopUp() {
+		console.log('Clicked!');
+		this.setState({
+			opened: !this.state.opened
+		});
+	}
 
-					<Alerts/>
+	render() {
+		return (
+			<header>
+				<button type="button" className="menu_btn">
+					<i className="venturit Menu"></i>
 				</button>
 
-				<button type="button" className="chats">
-					<i className="venturit Chat"></i>
-				</button>
+				<img className="logo" src={ Logo } alt="Platform" />
 
-				<h3 className="name">Clarence Rusell</h3>
+				{/* Search Form for header */}
+				<SearchForm/>
 
-				<figure className="figure">
-					<img className="picture" src="assets/images/placeholders/Picture.png" alt="User" />
-				</figure>
+				<div className="user">
+					<button type="button" className="alerts" onClick={ this.showPopUp }>
+						<i className="venturit Alerts"></i>
 
-				<button type="button" className="more">
-					<i className="venturit Arrow-Down"></i>
-				</button>
-			</div>
-		</header>
-	);
+						<Alerts opened={ this.state.opened }/>
+					</button>
+
+					<button type="button" className="chats">
+						<i className="venturit Chat"></i>
+					</button>
+
+					<h3 className="name">Clarence Rusell</h3>
+
+					<figure className="figure">
+						<img className="picture" src={ User } alt="User" />
+					</figure>
+
+					<button type="button" className="more">
+						<i className="venturit Arrow-Down"></i>
+					</button>
+				</div>
+			</header>
+		);
+	}
 }
 
 export default Header;

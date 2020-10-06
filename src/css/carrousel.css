@@ -65,7 +65,7 @@ div.carrousel div.carrousel-cell h1.title, div.carrousel div.carrousel-cell h2.t
   font-size: 30px;
 }
 div.carrousel div.carrousel-cell h1.date, div.carrousel div.carrousel-cell h2.date, div.carrousel div.carrousel-cell h3.date, div.carrousel div.carrousel-cell h4.date, div.carrousel div.carrousel-cell h5.date, div.carrousel div.carrousel-cell h6.date {
-  margin-top: 8px;
+  margin-top: 2px;
   font-weight: 400;
 }
 @media screen and (min-width: 960px) {
@@ -80,6 +80,7 @@ div.carrousel div.carrousel-cell h1.date, div.carrousel div.carrousel-cell h2.da
   }
   div.carrousel div.carrousel-cell h1.date, div.carrousel div.carrousel-cell h2.date, div.carrousel div.carrousel-cell h3.date, div.carrousel div.carrousel-cell h4.date, div.carrousel div.carrousel-cell h5.date, div.carrousel div.carrousel-cell h6.date {
     right: 80px;
+    font-weight: 600;
   }
 }
 

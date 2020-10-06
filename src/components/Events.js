@@ -5,6 +5,11 @@ import '../css/events.css';
 import '../css/carrousel.css';
 import '../css/carrouselb.css';
 
+// Images
+import Webinars from '../images/thumbnails/Webinars@2x.png';
+import Thumbnail from '../images/thumbnails/Thumbnail@2x.png';
+import Header from '../images/headers/Clock.png';
+
 const events = [
 	{
 		topic: 'Science', 
@@ -27,22 +32,22 @@ const eventsToday = [
 	{
 		time: '10:30 AM', 
 		title: 'Webinar: the basics of...', 
-		type: 'Webinars'
+		icon: Webinars
 	}, 
 	{
 		time: '5:25 PM', 
 		title: 'Team Building Activity &#x1F525;', 
-		type: 'Thumbnail'
+		icon: Thumbnail
 	}, 
 	{
 		time: '6:29 PM', 
 		title: 'How to overcome fear', 
-		type: 'Webinars'
+		icon: Webinars
 	}, 
 	{
 		time: '1:40 PM', 
 		title: 'Living on the edge', 
-		type: 'Thumbnail'
+		icon: Thumbnail
 	}
 ];
 
@@ -79,7 +84,7 @@ class Events extends Component {
 
 				<div className="carrousel" ref={ node => ( this.carouselNode = node ) }>
 					{events.map((eventObj, index) => (
-						<div key={ index } className="carrousel-cell" style={{ backgroundImage: "url('./assets/images/headers/Clock.png')" }}>
+						<div key={ index } className="carrousel-cell" style={{ backgroundImage: 'url(' + Header + ')' }}>
 							<h5 className="topic">{ eventObj.topic }</h5>
 							<h1 className="title">{ eventObj.title }</h1>
 							<h2 className="date">{ eventObj.date }</h2>
@@ -92,7 +97,7 @@ class Events extends Component {
 				<div className="carrousel-b" ref={ node => ( this.carouselBNode = node ) }>
 					{eventsToday.map((eventObj, index) => (
 						<div key={ index } className="carrousel-cell">
-							<img className="thumbnail" src={ 'assets/images/thumbnails/' + eventObj.type + '@2x.png' } alt="" />
+							<img className="thumbnail" src={ eventObj.icon } alt="" />
 
 							<h4 className="time">{ eventObj.time }</h4>
 							<h3 className="title">{ eventObj.title }</h3>

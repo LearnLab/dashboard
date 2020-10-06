@@ -6,8 +6,11 @@ form.search_form input {
   margin: 0;
   padding: 8px 10px;
   border: none;
-  color: #E8E8EE;
+  color: #103460;
   background: #F5F5FB;
+}
+form.search_form input:focus {
+  outline: 1px solid #3D84FF;
 }
 form.search_form input[type=text] {
   padding: 18px;
@@ -16,7 +19,7 @@ form.search_form input[type=text] {
 }
 form.search_form input[type=submit] {
   width: 40px;
-  background: no-repeat center/12px url("%PUBLIC_URL%/assets/images/icons/Search.png"), #F5F5FB;
+  background: no-repeat center/12px url(../images/icons/Search.png), #F5F5FB;
 }
 form.search_form button.add_btn {
   display: none;
