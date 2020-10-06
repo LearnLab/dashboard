@@ -79,7 +79,7 @@ class Events extends Component {
 
 				<div className="carrousel" ref={ node => ( this.carouselNode = node ) }>
 					{events.map((eventObj, index) => (
-						<div key={ index } className="carrousel-cell">
+						<div key={ index } className="carrousel-cell" style={{ backgroundImage: "url('./assets/images/headers/Clock.png')" }}>
 							<h5 className="topic">{ eventObj.topic }</h5>
 							<h1 className="title">{ eventObj.title }</h1>
 							<h2 className="date">{ eventObj.date }</h2>
@@ -92,7 +92,7 @@ class Events extends Component {
 				<div className="carrousel-b" ref={ node => ( this.carouselBNode = node ) }>
 					{eventsToday.map((eventObj, index) => (
 						<div key={ index } className="carrousel-cell">
-							<img className="thumbnail" src={ '%PUBLIC_URL%/assets/images/thumbnails/' + eventObj.type + '@2x.png' } alt="" />
+							<img className="thumbnail" src={ 'assets/images/thumbnails/' + eventObj.type + '@2x.png' } alt="" />
 
 							<h4 className="time">{ eventObj.time }</h4>
 							<h3 className="title">{ eventObj.title }</h3>

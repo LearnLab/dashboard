@@ -40,7 +40,9 @@ div.carrousel div.carrousel-cell {
   margin: 0 10px;
   height: 100%;
   width: 100%;
-  background: no-repeat center/cover url("%PUBLIC_URL%/assets/images/headers/Clock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 10px;
 }
 div.carrousel div.carrousel-cell .topic {
