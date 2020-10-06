@@ -10,7 +10,7 @@ function Header() {
 				<i className="venturit Menu"></i>
 			</button>
 
-			<img className="logo" src="%PUBLIC_URL%/assets/images/logo/Platform@2x.png" alt="Platform" />
+			<img className="logo" src="assets/images/logo/Platform@2x.png" alt="Platform" />
 
 			{/* Search Form for header */}
 			<SearchForm/>
