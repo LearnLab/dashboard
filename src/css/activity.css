@@ -77,7 +77,7 @@ section.activity details.activity-item summary {
     width: 10px;
     transform: translateY(-50%);
     transition: 300ms;
-    background: no-repeat center/contain url("%PUBLIC_URL%/assets/images/icons/Arrow-Down.png");
+    background: no-repeat center/contain url(../images/icons/Arrow-Down.png);
   }
 }
 section.activity details.activity-item summary strong {

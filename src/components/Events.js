@@ -36,7 +36,7 @@ const eventsToday = [
 	}, 
 	{
 		time: '5:25 PM', 
-		title: 'Team Building Activity &#x1F525;', 
+		title: 'Team Building Activity', 
 		icon: Thumbnail
 	}, 
 	{

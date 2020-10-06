@@ -84,7 +84,6 @@ section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.da
 section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6 {
   max-width: 300px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 @media screen and (min-width: 960px) {
   section.dashboard div.reminder h1, section.dashboard div.reminder h2, section.dashboard div.reminder h3, section.dashboard div.reminder h4, section.dashboard div.reminder h5, section.dashboard div.reminder h6 {

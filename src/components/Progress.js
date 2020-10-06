@@ -70,9 +70,7 @@ function Progress() {
 			</div>
 
 			<div className="confirmation-notification">
-				<p><strong>Confirm your account details</strong> <br /> 
-				Please confirm your email and phone number. <br />
-				&#x1F625;</p>
+				<p><strong>Confirm your account details</strong> Please confirm your email and phone number. <span role="img" aria-label="Worried">&#x1F625;</span></p>
 			</div>
 		</section>
 	);
