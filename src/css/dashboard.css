@@ -31,22 +31,17 @@ section.dashboard div.current-topic h1, section.dashboard div.current-topic h2, 
   font-family: "Gilroy", sans-serif;
   color: #C1C1C1;
 }
-section.dashboard div.current-topic .flag {
+section.dashboard div.current-topic .language {
   position: relative;
   margin-left: 20px;
   font-size: 22px;
   color: #103460;
 }
-section.dashboard div.current-topic .flag::before {
-  content: "";
+section.dashboard div.current-topic .language .flag {
   position: absolute;
-  top: 2px;
-  left: -22px;
-  height: 18px;
-  width: 18px;
-}
-section.dashboard div.current-topic .english::before {
-  background: no-repeat center/cover url("%PUBLIC_URL%/assets/images/thumbnails/Flag-US-Min.png");
+  top: 0;
+  left: -16px;
+  height: 12px;
 }
 section.dashboard div.reminder {
   position: relative;
@@ -60,7 +55,6 @@ section.dashboard div.reminder {
   section.dashboard div.reminder {
     margin: 70px auto 0;
     padding: 20px 0;
-    background: no-repeat right/cover url("%PUBLIC_URL%/assets/images/headers/Header@2x.png"), #3D84FF;
   }
 }
 section.dashboard div.reminder img.dashboard-pet {

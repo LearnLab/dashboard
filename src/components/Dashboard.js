@@ -8,7 +8,10 @@ function Dashboard() {
 			
 			<div className="current-topic">
 				<h6>Currently Learning</h6>
-				<h3 className="flag english">English</h3>
+				<h3 className="language">
+					<img src="assets/images/thumbnails/Flag-US@2x.png" className="flag" alt="English Language" />
+					English
+				</h3>
 			</div>
 
 			<div className="reminder">
