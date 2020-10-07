@@ -4,7 +4,7 @@
 
 div.alerts-pop {
 	position: relative;
-	padding: 10px 0;
+	padding: 16px 0;
 
 	width: 380px;
 
@@ -18,27 +18,39 @@ div.alerts-pop {
 	&:after {
 		content: '';
 		position: absolute;
-		top: -14px;
+		top: -18px;
 		right: 59px;
 
-		border-right: 24px solid transparent;
-		border-left: 24px solid transparent;
-		border-bottom: 26px solid $white;
+		border-right: 16px solid transparent;
+		border-left: 16px solid transparent;
+		border-bottom: 20px solid $white;
 	}
 
 	div.alert-element {
 		position: relative;
 
-		margin: 24px;
+		margin: 0;
+		padding: 16px 20px 16px 30px;
+
+		transition: 300ms;
+
+		&:hover {
+			color: $white;
+			background: $blue;
+
+			h1, h2, h3, h4, h5, h6, .subject {
+				color: $white;
+			}
+		}
 
 		img {
 			position: absolute;
 			top: 50%;
-			left: 0;
+			left: 18px;
 
 			transform: translateY(-50%);
 
-			height: 50px;
+			height: 60px;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -47,6 +59,8 @@ div.alerts-pop {
 			font-family: 'Gilroy', sans-serif;
 			font-weight: 400;
 			text-align: left;
+
+			transition: 300ms;
 
 			color: $gray;
 

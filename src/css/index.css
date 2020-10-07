@@ -81,7 +81,6 @@ section h1.line, section h2.line, section h3.line, section h4.line, section h5.l
 section h1.line::after, section h2.line::after, section h3.line::after, section h4.line::after, section h5.line::after, section h6.line::after {
   content: "";
   position: absolute;
-  top: calc(50% - 1px);
   right: 0;
   left: 0;
   z-index: -500;
@@ -91,6 +90,24 @@ section h1.line::after, section h2.line::after, section h3.line::after, section 
 section h1.line span, section h2.line span, section h3.line span, section h4.line span, section h5.line span, section h6.line span {
   padding-right: 10px;
   background: #F5F5FB;
+}
+section h1.line:after {
+  top: 12px;
+}
+section h2.line:after {
+  top: 10px;
+}
+section h3.line:after {
+  top: 8px;
+}
+section h4.line:after {
+  top: 6px;
+}
+section h5.line:after {
+  top: 4px;
+}
+section h6.line:after {
+  top: 2px;
 }
 
 form input, form button {

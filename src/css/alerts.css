@@ -1,6 +1,6 @@
 div.alerts-pop {
   position: relative;
-  padding: 10px 0;
+  padding: 16px 0;
   width: 380px;
   overflow: visible;
   background: #FFF;
@@ -10,28 +10,38 @@ div.alerts-pop {
 div.alerts-pop:after {
   content: "";
   position: absolute;
-  top: -14px;
+  top: -18px;
   right: 59px;
-  border-right: 24px solid transparent;
-  border-left: 24px solid transparent;
-  border-bottom: 26px solid #FFF;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  border-bottom: 20px solid #FFF;
 }
 div.alerts-pop div.alert-element {
   position: relative;
-  margin: 24px;
+  margin: 0;
+  padding: 16px 20px 16px 30px;
+  transition: 300ms;
+}
+div.alerts-pop div.alert-element:hover {
+  color: #FFF;
+  background: #3D84FF;
+}
+div.alerts-pop div.alert-element:hover h1, div.alerts-pop div.alert-element:hover h2, div.alerts-pop div.alert-element:hover h3, div.alerts-pop div.alert-element:hover h4, div.alerts-pop div.alert-element:hover h5, div.alerts-pop div.alert-element:hover h6, div.alerts-pop div.alert-element:hover .subject {
+  color: #FFF;
 }
 div.alerts-pop div.alert-element img {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 18px;
   transform: translateY(-50%);
-  height: 50px;
+  height: 60px;
 }
 div.alerts-pop div.alert-element h1, div.alerts-pop div.alert-element h2, div.alerts-pop div.alert-element h3, div.alerts-pop div.alert-element h4, div.alerts-pop div.alert-element h5, div.alerts-pop div.alert-element h6 {
   margin: 6px 12px 12px 60px;
   font-family: "Gilroy", sans-serif;
   font-weight: 400;
   text-align: left;
+  transition: 300ms;
   color: #C1C1C1;
 }
 div.alerts-pop div.alert-element h1.subject, div.alerts-pop div.alert-element h2.subject, div.alerts-pop div.alert-element h3.subject, div.alerts-pop div.alert-element h4.subject, div.alerts-pop div.alert-element h5.subject, div.alerts-pop div.alert-element h6.subject {

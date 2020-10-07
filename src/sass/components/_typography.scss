@@ -76,7 +76,6 @@ section {
 			&::after {
 				content: '';
 				position: absolute;
-				top: calc(50% - 1px);
 				right: 0;
 				left: 0;
 				z-index: -500;
@@ -92,6 +91,13 @@ section {
 			}
 		}
 	}
+
+	h1.line:after { top: 12px; }
+	h2.line:after { top: 10px; }
+	h3.line:after { top: 8px; }
+	h4.line:after { top: 6px; }
+	h5.line:after { top: 4px; }
+	h6.line:after { top: 2px; }
 }
 
 form {

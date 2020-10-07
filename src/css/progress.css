@@ -144,11 +144,43 @@ section.progress div.progress-overview div.legend div.element:first-of-type::aft
   background: #FFF;
 }
 section.progress div.counter-elements {
+  position: relative;
   margin: 20px;
   grid-area: counter;
   display: grid;
   grid-gap: 20px 20px;
   grid-template-columns: 1fr 1fr;
+}
+section.progress div.counter-elements.loading {
+  height: 225px;
+}
+section.progress div.counter-elements.loading:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  animation: Loading 7s infinite;
+}
+@keyframes Loading {
+  0% {
+    background: #FF794F;
+  }
+  25% {
+    background: #FED200;
+  }
+  50% {
+    background: #3D84FF;
+  }
+  75% {
+    background: #C1C1C1;
+  }
+  100% {
+    background: #FF794F;
+  }
 }
 @media screen and (min-width: 768px) {
   section.progress div.counter-elements {
@@ -165,7 +197,16 @@ section.progress div.counter-elements div {
   position: relative;
   margin: 0;
   border-radius: 6px;
+  box-shadow: 0 4px 16px 1px transparent;
+  transition: 300ms;
   background: #FFF;
+}
+section.progress div.counter-elements div:hover {
+  background: #3D84FF;
+  box-shadow: 0 4px 16px 1px #3D84FF;
+}
+section.progress div.counter-elements div:hover h1, section.progress div.counter-elements div:hover h2, section.progress div.counter-elements div:hover h3, section.progress div.counter-elements div:hover h4, section.progress div.counter-elements div:hover h5, section.progress div.counter-elements div:hover h6 {
+  color: #FFF;
 }
 section.progress div.counter-elements div h1, section.progress div.counter-elements div h2, section.progress div.counter-elements div h3, section.progress div.counter-elements div h4, section.progress div.counter-elements div h5, section.progress div.counter-elements div h6 {
   margin: 10px;

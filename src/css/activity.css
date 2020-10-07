@@ -10,11 +10,14 @@ section.activity details.activity-item {
   overflow: hidden;
   background: #FFF;
   border-radius: 10px;
-  box-shadow: 0 6px 16px 3px transparent;
+  box-shadow: 0 5px 18px 0 transparent;
   transition: 300ms;
 }
 section.activity details.activity-item:first-of-type {
   border-radius: 4px;
+}
+section.activity details.activity-item:hover {
+  box-shadow: 0 5px 18px 3px #E8E8EE;
 }
 section.activity details.activity-item p, section.activity details.activity-item summary {
   margin: 14px 14px 14px 66px;
@@ -31,7 +34,7 @@ section.activity details.activity-item p, section.activity details.activity-item
 }
 @media screen and (min-width: 960px) {
   section.activity details.activity-item[open] {
-    box-shadow: 0 6px 16px 3px #E8E8EE;
+    box-shadow: 0 5px 18px 0 #C1C1C1;
   }
   section.activity details.activity-item[open] summary {
     margin-bottom: 20px;
