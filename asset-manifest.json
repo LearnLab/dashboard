@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.d75e6492.chunk.css",
-    "main.js": "/dashboard/static/js/main.feaa8cff.chunk.js",
-    "main.js.map": "/dashboard/static/js/main.feaa8cff.chunk.js.map",
+    "main.css": "/dashboard/static/css/main.f224b205.chunk.css",
+    "main.js": "/dashboard/static/js/main.4be1af86.chunk.js",
+    "main.js.map": "/dashboard/static/js/main.4be1af86.chunk.js.map",
     "runtime-main.js": "/dashboard/static/js/runtime-main.2ec0fa51.js",
     "runtime-main.js.map": "/dashboard/static/js/runtime-main.2ec0fa51.js.map",
     "static/css/2.546ed383.chunk.css": "/dashboard/static/css/2.546ed383.chunk.css",
-    "static/js/2.2fae9f30.chunk.js": "/dashboard/static/js/2.2fae9f30.chunk.js",
-    "static/js/2.2fae9f30.chunk.js.map": "/dashboard/static/js/2.2fae9f30.chunk.js.map",
+    "static/js/2.9ccbb85b.chunk.js": "/dashboard/static/js/2.9ccbb85b.chunk.js",
+    "static/js/2.9ccbb85b.chunk.js.map": "/dashboard/static/js/2.9ccbb85b.chunk.js.map",
     "index.html": "/dashboard/index.html",
-    "precache-manifest.c9321f9fdad0526698fb3cc7f4d3abb2.js": "/dashboard/precache-manifest.c9321f9fdad0526698fb3cc7f4d3abb2.js",
+    "precache-manifest.b21255701b38cc419d23429fc4f9c9a9.js": "/dashboard/precache-manifest.b21255701b38cc419d23429fc4f9c9a9.js",
     "service-worker.js": "/dashboard/service-worker.js",
     "static/css/2.546ed383.chunk.css.map": "/dashboard/static/css/2.546ed383.chunk.css.map",
-    "static/css/main.d75e6492.chunk.css.map": "/dashboard/static/css/main.d75e6492.chunk.css.map",
-    "static/js/2.2fae9f30.chunk.js.LICENSE.txt": "/dashboard/static/js/2.2fae9f30.chunk.js.LICENSE.txt",
+    "static/css/main.f224b205.chunk.css.map": "/dashboard/static/css/main.f224b205.chunk.css.map",
+    "static/js/2.9ccbb85b.chunk.js.LICENSE.txt": "/dashboard/static/js/2.9ccbb85b.chunk.js.LICENSE.txt",
     "static/media/Clock.png": "/dashboard/static/media/Clock.1a39e5e9.png",
     "static/media/Dashbi.png": "/dashboard/static/media/Dashbi.a1b7d8ba.png",
     "static/media/index.css": "/dashboard/static/media/venturit.e77ccdcb.svg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ec0fa51.js",
     "static/css/2.546ed383.chunk.css",
-    "static/js/2.2fae9f30.chunk.js",
-    "static/css/main.d75e6492.chunk.css",
-    "static/js/main.feaa8cff.chunk.js"
+    "static/js/2.9ccbb85b.chunk.js",
+    "static/css/main.f224b205.chunk.css",
+    "static/js/main.4be1af86.chunk.js"
   ]
 }
